@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First task</title>
+</head>
+<body>
+    <h1>First task</h1>
+    <h2>Написать приложение которое принимает от пользователя любую строку и считает все символы пробела в ней</h2>
+
+    <script>
+const text = prompt(`Put here some text. Let's count the number of 'spaces'`, `Put here some text. Let's count the number of 'spaces'`)
+let spaceCount = 0
+
+for (let i = 0; i < text.length; i++){
+    if (text[i] == ' '){
+        spaceCount++
+    }
+}
+alert(`The amount of 'spaces' is ${spaceCount}`)
+    </script>
+</body>
+</html>

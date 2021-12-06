@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second task</title>
+</head>
+<body>
+    <h1>Second task</h1>
+    <h2>Написать приложение которое принимает от пользователя любую строку и заменяет все символы пробела в ней на случайное целое число в диапазоне от 0 до длинны строки </h2>
+
+    <script>
+const text = prompt(`Put here some text. If you press 'OK', it will change all 'spaces' in to random numbers`, `Put here some text. If you press 'OK', it will change all 'spaces' in to random numbers`)
+let newText = ''
+
+for (let i = 0; i < text.length; i++){
+    if (text[i] == ' ') {
+        newText += Math.round(Math.random()*text.length)
+    } else{
+        newText += text[i]
+    }
+}
+alert(`The length of your string is ${text.length}, and your new text now look like this:
+${newText}
+Looks perfect! Right?`)
+    </script>
+</body>
+</html>
