@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+*{
+    font-family: 'Exo 2', sans-serif;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.bank{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    margin: 20px;
+    background: green;
+}
+.rest{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    margin: 20px;
+    background: rgb(250, 102, 102);
+}

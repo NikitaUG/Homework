@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=10, initial-scale=1.0">
+    <title>Bank check</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+<h1>Bank check</h1>
+ 
+ <script>
+        let AccountBalance = 1000000;
+        let date = new Date();
+        document.write(`<div><strong>Time of transaction: </strong>${date.getFullYear()}.${date.getMonth()}.${date.getDate()}, ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}</div>`);
+        
+        const RequestSum = parseInt(prompt('Please enter requested amount','485'));
+
+        if(AccountBalance >= RequestSum){
+            document.write(`<div><strong>Requested amount: </strong>${RequestSum}$</div>`);
+
+            const b50 = 50;
+            const b20 = 20;
+            const b10 = 10;
+
+            let countN1 = Math.floor(RequestSum / b50);
+            let countN2 = Math.floor((RequestSum - countN1*b50) / b20);
+            let countN3 = Math.floor((RequestSum - countN1*b50 - countN2*b20) / b10);
+
+            let rest = RequestSum - countN1*b50 - countN2*b20 - countN3*b10;
+            let ReceiveSum = RequestSum - rest;
+            AccountBalance -= ReceiveSum;
+
+            document.write(`<div><strong>Received amount: </strong>${ReceiveSum}$</div>`);
+            document.write(`<div><strong>Unreceived amount: </strong>${rest}$</div>`);
+            document.write(`<div><strong>Account balance: </strong>${AccountBalance}$</div>`);
+
+
+            document.write(`<div class="flex"><div class="bank">50: ${countN1}</div> 
+            <div class="bank">20: ${countN2}</div> 
+            <div class="bank">10: ${countN3}</div> 
+            <div class="rest">rest: ${rest}</div></div>`);
+        } else{
+            document.write(`<div><strong>Your requested amount exceeds Account Available Balance : </strong>${AccountBalance}$</div>`);
+        }
+
+        
+</script>   
+
+
+
+
+<p>Используя document.write доработать приложение банкомат - что бы после снятия денег пользователь видел чек</p>
+    
+</body>
+</html>
