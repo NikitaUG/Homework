@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+*{
+    font-family: 'Exo 2', sans-serif;
+    margin: 10px auto;
+
+
+}
+h1{
+    text-align: center;
+}
+:root{
+    --box-wight: 150px;
+    --box-height: 100px;
+    --box-margin: 10px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(var(--box-wight) * 7 + var(--box-margin) * 14);
+    border: gray solid 1px;
+}
+
+.box {
+
+    width: var(--box-wight);
+    height: var(--box-height);
+    margin: var(--box-margin);
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: end;
+    border-radius: 5px;
+}
+
+.box.month_in{
+    border: #9898ff solid 1px;
+    background-color: rgb(208 208 247 / 43%);
+}
+.box.month_out{
+    border: rgb(139, 139, 139) solid 1px;
+    background-color: rgb(237 237 237 / 43%);
+    color: #b7b7b7;
+}
+.box.month_in.weekend{
+    border: rgb(239 120 120) solid 1px;
+    background-color: rgb(247 208 208 / 43%);
+    color: #ff3f3f;
+}
+.box.month_in.today{
+    border: rgb(3, 173, 26) solid 2px;
+    background-color: rgb(208 247 208 / 43%);
+    font-weight: 700;
+    color: #19a319;
+}
+.box.month_out.weekend{
+    border: rgb(221 159 159) solid 1px;
+    background-color: rgb(255 245 245 / 43%);
+    color: #ff8585;
+}
