@@ -1,0 +1,70 @@
+
+@keyframes _red{
+0%  {
+    background-color: red;
+}
+40% {
+    background-color: grey;
+}
+100%  {
+    background-color: grey;
+}
+}
+@keyframes _yellow{
+    0%  {
+        background-color: grey;
+    }
+    20%  {
+        background-color: yellow;
+    }  
+    40%  {
+        background-color: grey;
+    }
+    80%  {
+        background-color: yellow;
+    }
+    100%  {
+        background-color: yellow;
+    }
+}
+@keyframes _green{
+    0%  {
+        background-color: grey;
+    }
+    40%  {
+        background-color: green;
+    }
+    60%  {
+        background-color: grey;
+    }
+    63.5%{
+        background-color: green;
+    }
+    67%{
+        background-color: grey;
+    }
+    70.5%{
+        background-color: green;
+    }
+    74%{
+        background-color: grey;
+    }
+    77.5%{
+        background-color: green;
+    }
+    80%  {
+        background-color: grey;
+    }
+    100%  {
+        background-color: grey;
+    }
+}
+
+@keyframes _yellow_default{
+    0%  {
+        background-color: yellow;
+    }  
+    50%  {
+        background-color: grey;
+    }
+}

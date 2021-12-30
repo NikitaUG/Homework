@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="keyframes.css"> -->
+    <script src="keyframes.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="controls.js" defer></script>
+    
+    <title>Traffic Lights</title>
+</head>
+
+<body>
+    <div class="line1">
+        <form action="">
+            <select name="mode">
+                <option value="on">on</option>
+                <option value="off">off</option>
+            </select>
+            <div><label><input type="checkbox" name="control" >hidden control</label></div>
+            <div><label><input type="checkbox" name="pause">set on pause</label></div>
+            <strong>Total time</strong>
+            <div data-total-time> <input type="number" value="10"></div>
+        </form>
+    </div>
+    <section>
+        <div><img class="traffic-light" src="traffic-light.svg" alt=""></div>
+        <div class="line">
+        <div class="light red" data-red> </div>
+        <input type="number"> 
+        <!-- <div class="text">Red</div>  -->
+    </div>
+    <div class="line">
+        <div class="light yellow" data-yellow> </div>
+            <input type="number">
+            <!-- <div class="text">Yellow</div>  -->
+    </div>
+    <div class="line">
+        <div class="light green" data-green> </div>
+        <input type="number"> 
+        <!-- <div class="text">Green</div>  -->
+    </div></section>
+    
+<div id="key_frame"></div>
+</body>
+
+</html>

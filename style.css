@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+*{
+    font-family: 'Exo 2', sans-serif;
+    
+}
+body{
+    box-shadow: inset 0px 0px 50px rgb(0 0 0 / 50%);
+    margin: 0 auto;
+    height: 100vh;
+}
+section{
+    width: 800px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+input {
+    margin: 0px 10px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+input[type="number"]{
+    width: 50px;
+    height: 25px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.line1{
+    width: 800px;
+    height: 30px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 25px;
+    padding-bottom: 80px;
+    margin-left: 105px;
+}
+.line{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 25px;
+    margin-left: 100px;
+}
+.text{
+    width: 150px;
+    /* text-align: right; */
+}
+.light{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+    margin-right: 200px;
+}
+.traffic-light{
+    position: absolute;
+    left: 95px;
+    top: -42px;
+    height: 292px;
+    z-index: -2;
+}
+
